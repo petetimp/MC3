@@ -1,0 +1,435 @@
+@charset "utf-8";
+/* CSS Document */
+
+section#app{
+    width:1024px;
+	height:748px;
+	background-image:url('lyn_blank_background.png');
+	font-family:'Proxima Nova Rg';
+	color:white;
+}
+
+div#app-body {
+    max-height: 748px;
+    overflow: hidden;
+}
+
+section#screen-2,section#screen-3,section#screen-4{
+    display:none;
+}
+
+.section-inner .col-md-6, section#section-3 .section-inner .col-md-12  {
+    height: 748px;
+}
+
+.ui-loader.ui-corner-all.ui-body-a.ui-loader-default {
+    display: none;
+}
+
+.bold{
+    font-weight:bold;
+}
+
+#returnBtn {
+    width: 26px;
+    height: 26px;
+    margin-top: 6px;
+    left: 12px;
+    background: url(menu_return.png);
+    position: absolute;
+    cursor:pointer;
+    z-index: 20;
+}
+
+/*Screen 1*/
+
+section#screen-1 .col-md-6{
+    padding-top:125px;	
+}
+
+section#screen-1 .col-md-6:first-child {
+    width: 54%;
+}
+
+section#screen-1 .col-md-6:last-child {
+    width: 46%;
+    /*padding-left: 0;
+    padding-right: 5px;*/
+}
+
+.lynparza-select {
+    padding: 0px 0px 20px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.lynparza-select.completed {
+    color: #f9b218;
+}
+
+.lynparza-select h1 {
+    display: inline-block;
+    font-size: 23px;
+    padding-left: 8px;
+}
+
+.instruction-num {
+    display: inline-block;
+}
+
+.inner-circle {
+    background-color: white;
+    width: 41px;
+	height: 41px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.outer-circle {
+    width: 55px;
+    border-radius: 30px;
+    /*border: 3px solid white;*/
+    padding: 4px;
+}
+
+.inner-circle span {
+    font-size: 30px;
+	color: transparent;
+}
+
+#screen-1 .col-md-6.last h1 {
+    font-size: 30px;
+	padding-top:10px;
+}
+
+#screen-1 .col-md-6.last span{
+    font-size: 24px;
+}
+
+#screen-1 .col-md-6.last p {
+    font-size: 18px;
+    max-width: 415px;
+}
+
+.lynparza-select-options {
+    display: none;
+    background-color: white;
+    border: 1px solid #7c4096;
+    /* border-radius: 5px; */
+    margin-top: 2px;
+    max-width: 305px;
+    margin-left: 79px;
+    text-align: center;
+    max-height: 150px;
+    overflow-y: scroll;
+    margin-top: -20px;
+}
+
+.lynparza-select-options[data-select="station"] {
+    max-width: 305px;
+}
+
+#screen-1 .col-md-6.last p.notice-text {
+    font-size: 30px;
+}
+
+
+.lynparza-select-options .option {
+    cursor: pointer;
+    text-align: left;
+    margin-left: 2px;
+    padding: 10px 0;
+    color:#7c4096;
+}
+
+.selected.option{
+    background-color:#7c4096;
+    color:white;	
+}
+
+.button {
+    background-color: transparent;
+    width: 120px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    border: 3px solid white;
+    font-size:24px;
+}
+
+section#screen-1 .button {
+    margin-left: 100px;
+}
+
+.button.tap{
+    background-color:white;	
+}
+
+.button span.tap{
+    color:#7c4096;
+    	
+}
+
+section#screen-1 .button {
+    display: none;
+}
+
+.col-md-6.last .button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+span.inner-circle {
+    display: inline-block;
+    background: #F9B218;
+    margin-right: 10px;
+    position: relative;
+    top: 12px;
+}
+
+#screen-1 .col-md-6.last p.notice-text {
+    font-size: 24px;
+    margin-top:30px;
+}
+
+#screen-1 .col-md-6.last p {
+    font-size: 18px;
+    max-width: 415px;
+}
+.orange {
+    color: #f9b218;
+}
+
+div#room-name .instruction-num {
+    background: url(lynparza-1.png);
+    height: 53px;
+    width: 53px;
+    position: relative;
+    top: 20px;
+}
+
+.completed#room-name .instruction-num{
+    background: url(lynparza-1-gold.png);	
+}
+
+div#team-name .instruction-num {
+    background: url(lynparza-2.png);
+    height: 53px;
+    width: 53px;
+    position: relative;
+    top: 20px;
+}
+
+.completed#team-name .instruction-num{
+    background: url(lynparza-2-gold.png);	
+}
+
+/*Screen 2*/
+#screen-2 .button span{
+    font-size:20px;
+}
+
+#screen-2 .button {
+    position: absolute;
+    left: 685px;
+    top: 76px;
+    width: 240px;
+}
+
+form#lynparza-form input[type='submit'] {
+    border: 3px solid white;
+    font-size: 20px;
+    left: 930px;
+    height: 48px;
+    width: 90px;
+    padding-top: 5px;
+}
+
+#screen-2 form {
+    width: 100%;
+    height: 748px;
+}
+
+section#screen-2 .col-md-12 {
+    overflow: hidden;
+	padding:0;
+}
+
+#screen-2 .radio-inner {
+    border: 2px solid #f9b218;
+    border-radius: 20px;
+    height: 22px;
+    width: 22px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.radio-inner .inner-circle {
+    height: 16px;
+    width: 16px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.inner-circle {
+	background-color: transparent;
+    width: 41px;
+    height: 41px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#screen-2 form {
+    width: 100%;
+    height: 618px;
+    margin-top: 130px;
+    overflow-y: scroll;
+    background-color: white;
+	border-top: 3px solid white;
+}
+
+table#lynparza-table {
+    width: 99.9%;
+}
+
+table#lynparza-table h2 {
+    color: #7c4096;
+    font-size: 20px;
+	margin-left:15px;
+}
+
+table#lynparza-table td,table#lynparza-table th {
+    border: 1px solid #7c4096;
+}
+
+table#lynparza-table tr:first-child th:last-child {
+    background: #f9b218;
+    text-align: center;
+	padding:5px;
+	font-size:24px;
+    letter-spacing:1px;
+}
+
+table#lynparza-table td:last-child {
+    width: 675px;
+}
+
+.inner-circle.selected {
+    background-color: #f9b218;
+}
+
+table#lynparza-table li {
+    list-style-type: disc;
+    color: #f9b218;
+    margin: 10px 0;
+    line-height:24px;
+    font-size:24px;
+}
+
+table#lynparza-table li span {
+    color: #000;
+    font-size:16px;
+}
+
+table#lynparza-table th {
+    background: #2d0836;
+    width: 68px;
+}
+
+
+table#lynparza-table tr:first-child img{
+	
+}
+
+/*Screen 3*/
+section#screen-3 .col-md-12 {
+    height: 748px;
+}
+
+#screen-3 .button.prev.delay {
+    font-size: 24px;
+    width: 320px;
+    position: absolute;
+    top: 375px;
+}
+
+
+#screen-3 .message {
+    
+    position:relative;
+    top:200px;
+}
+
+#screen-3 .message h1 {
+    font-size: 72px;
+    margin:0;
+}
+
+#screen-3 .message h2 {
+    font-size: 45px;
+    margin: 0;
+}
+
+/*Screen 4*/
+section#screen-4 .col-md-12 {
+    height: 748px;
+}
+
+section#screen-4 .message {
+    text-align: center;
+    font-size: 33px;
+    position: relative;
+    top: 250px;
+}
+
+.lynparza-alert {
+    cursor: pointer;
+    width: 120px;
+    font-size: 24px;
+    border: 3px solid #8A004F;
+    text-align: center;
+    margin-left: 90px;
+    position: relative;
+    top: 210px;
+    border-radius: 5px;
+}
+
+.lynparza-alert span {
+    color: #8A004F;
+}
+
+.lynparza-alert.hover{
+    color:white;
+    background-color:#8A004F;
+}
+
+.lynparza-alert.hover span{
+    color: #ffffff;
+}
+
+
+/* This stylesheet generated by Transfonter (http://transfonter.org) on December 18, 2016 6:50 PM */
+
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('ProximaNova-Bold.eot');
+	src: url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNova-Bold.woff') format('woff'),
+		url('ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Rg';
+	src: url('ProximaNova-Regular.eot');
+	src: url('ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('ProximaNova-Regular.woff') format('woff'),
+		url('ProximaNova-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+

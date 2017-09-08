@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body ontouchstart="">
+        <div id="returnBtn"></div>
+        <section id="app">
+            <div id="app-body">
+                <section id="app-video">
+                    <img id="play-button" src="Video_play.png" />
+                    <video id="video-player" src="video1.mp4" poster="Video_Placeholder.png"></video>
+                    <div id="app-controls">
+                        <div id="restart" class="control"></div>
+                        <div id="rewind" class="control"></div>
+                        <div id="play" class="control"></div>
+                        <div id="forward" class="control"></div>
+                    </div>
+                </section>
+                <section id="app-gallery">
+                    <div id="thumbnail-1" class="thumbnail selected" data-video="0">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Michelle_Werner.png" />
+                                       
+                        </div>
+                        <span class="thumbnail-name">Michelle<br> Werner</span>
+                    </div>
+                    <div id="thumbnail-2" class="thumbnail" data-video="1">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Ashely_Gaines.png" />
+                            
+                        </div>
+                        <span class="thumbnail-name">Ashley<br> Gaines</span>
+                    </div>
+                    <div id="thumbnail-3" class="thumbnail" data-video="2">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                                <img src="Gabby.png" />
+                        </div>
+                        <span class="thumbnail-name">Gaby<br> Bourbara</span>
+                    </div>
+                    <div id="thumbnail-4" class="thumbnail" data-video="3">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                                <img src="Ronnie_Stevens.png" />
+                        </div>
+                        <span class="thumbnail-name">Ronnie<br> Stevens</span>
+                    </div>
+                    <div id="thumbnail-5" class="thumbnail" data-video="4">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Paul_Slattery.png" />
+                        </div>
+                        <span class="thumbnail-name">Paul<br> Slattery</span>
+                    </div>
+                    <div id="thumbnail-6" class="thumbnail" data-video="5">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Stephan_Wall.png" />
+                        </div>
+                        <span class="thumbnail-name">Stephan<br> Wall</span>
+                    </div>
+                    <div id="thumbnail-7" class="thumbnail" data-video="6">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Kami%20Tippy.png" />
+                        </div>
+                        <span class="thumbnail-name">Kami<br> Tippy</span>
+                    </div>
+                    <div id="thumbnail-8" class="thumbnail" data-video="7">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Roger_Harrison.png" />
+                        </div>
+                        <span class="thumbnail-name">Roger<br> Harrison</span>
+                    </div>
+                    <div id="thumbnail-9" class="thumbnail" data-video="8">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Jane_Chung.png" />
+                        </div>
+                        <span class="thumbnail-name">Jane<br> Chung</span>
+                    </div>
+                    <div id="thumbnail-10" class="thumbnail" data-video="9">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Jodi_Scheckerman.png" />
+                        </div>
+                        <span class="thumbnail-name">Jodi<br> Scheckerman</span>
+                    </div>
+                    <div id="thumbnail-11" class="thumbnail second-row" data-video="10">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Kerri_Culton.png" />
+                        </div>
+                        <span class="thumbnail-name">Kerri<br> Culton</span>
+                    </div>
+                    <div id="thumbnail-12" class="thumbnail second-row" data-video="11">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Ryan_Obringer.png" />
+                        </div>
+                        <span class="thumbnail-name">Ryan<br> Obringer</span>
+                    </div>
+                    <div id="thumbnail-13" class="thumbnail second-row" data-video="12">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Randy_Price.png" />
+                        </div>
+                        <span class="thumbnail-name">Randy<br> Price</span>
+                    </div>
+                    <div id="thumbnail-14" class="thumbnail second-row" data-video="13">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Terri_Ozegovich.png" />
+                        </div>
+                        <span class="thumbnail-name">Terri<br> Ozegovich</span>
+                    </div>
+                    <div id="thumbnail-15" class="thumbnail second-row" data-video="14">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Michael_Wilinsky.png" />
+                        </div>
+                        <span class="thumbnail-name">Michael <br>Wilinsky</span>
+                    </div>
+                    <div id="thumbnail-16" class="thumbnail second-row" data-video="15">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Candice_Antonelli.png" />
+                        </div>
+                        <span class="thumbnail-name">Candice<br> Antonelli</span>
+                    </div>
+                    <div id="thumbnail-17" class="thumbnail second-row" data-video="16">
+                        <div class="thumbnail-inner">
+                            <div class="image-border-container"><div class="image-border"></div></div>  
+                            <img src="Brandi_VanderMolen.png" />
+                        </div>
+                        <span class="thumbnail-name">Brandi <br>VanderMolen</span>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="bootstrap.css" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <script src="jquery-mobile.js"></script>
+        <script src="wwid.js"></script>
+        <script src="main.js"></script>
+    </head>
+    
+    <body ontouchstart="">
+    
+        <div id="returnBtn"></div>
+        
+        <section id="app">
+            <div id="app-body">
+            
+                <!--Screen 1-->
+                <section id="screen-1">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                            
+                                 <div class="lynparza-select" id="room-name">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <!--<div class="inner-circle">
+                                                 <span>1</span>
+                                             </div>--> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Room Name</h1>
+                                     
+                                 </div>
+                                 <div data-select="room-name" class="bold lynparza-select-options">
+                                         <div class="option initial">Touch to Select Room Name</div>
+                                         <div class="option">Palm Event Center AB</div>
+                                         <div class="option">Palm Event Center CD</div>
+                                         <div class="option">Palm Event Center IJ</div>
+                                         <div class="option">Palm Event Center KL</div>
+                                         
+                                 </div>
+                                 
+                                 <div class="lynparza-select json-heading" id="team-name">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <!--<div class="inner-circle">
+                                                 <span>2</span>
+                                             </div>--> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Team Name</h1>
+                                     
+                                 </div>
+
+                                 <div data-select="team-name" class="bold lynparza-select-options json-select">
+                                         <div class="option initial no-remove">Touch to Select Team Name</div>
+                                         
+                                 </div>
+                                 
+                                 <div class="button next one delay"><span>BEGIN</span></div>
+                            </div>
+                            <div class="col-md-6 last">
+				<p class="orange notice-text bold"><span class="inner-circle"></span>Indicates Step Complete</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--Screen 2-->
+                <section id="screen-2">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                              
+                                <div class="button prev delay"><span>RETURN TO MAIN MENU</span></div>
+                                <form id="lynparza-form" method="post" action="#">
+                                    <input type="submit" class="button input next delay two" value="SUBMIT" style="display: inline-block;">
+									<table id="lynparza-table">
+										<tr>
+											<th><img src="numbers-1.png"/></th>
+									        <th><img src="numbers-2.png"/></th>
+									        <th><img src="numbers-3.png"/></th>
+									        <th><img src="numbers-4.png"/></th>
+									        <th><img src="numbers-5.png"/></th>	
+										    <th>CRITERIA</th>	
+										</tr>
+										<tr>
+											<td>
+                                            	<div data-value="1" data-question="product_uniqueness" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="2" data-question="product_uniqueness" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="3" data-question="product_uniqueness" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="4" data-question="product_uniqueness" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="5" data-question="product_uniqueness" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+												<h2 class="bold">Product uniqueness</h2>
+												<ul class="bold">
+                                                	<li><span>Niraparib:gBRCA PFS = 21 months. Non-gBRCA/HRD+ PFS = 12.9 months.  Non-gBRCAPFS = 9.3 month.</span>
+                                                    </li>
+													<li><span>Rucaparib: ORR = 54%. mDOR = 9.2 months. PFS = 12.8 months</span></li>
+													<li><span>LYNPARZA: PFS = 6.7 months. ORR = 34% (50%-57% in 3-5L platinum-sensitive patients.  mDOR = 7.9 months.<br>
+														[LynparzaCompetitive Readiness and Positioning WS, p. 119]</span>
+                                                    </li>                
+                                                </ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+                                            	<div data-value="1" data-question="benefit" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="2" data-question="benefit" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="3" data-question="benefit" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="4" data-question="benefit" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="5" data-question="benefit" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+												<h2 class="bold">Benefit to patients/strengths</h2>
+												<ul class="bold">
+                                                	<li><span>Niraparib: Lesser pill burden with once daily option.  Broader HRD strategy using Myrpad's HRD assay.  First mover advantage in 2L PSR Mtx
+                                                    <br>
+														Non-gBRCAPFS = 9.3 month.</span>
+                                                    </li>
+													<li><span>Rucaparib: Lesser pill burden.  Broader g/s BRCA strategy using Foundation assay</span></li>
+													<li><span>LYNPARZA: Appropriately described adverse events associated with LYNPARZA.  Efficacy data in platinum-sensitive vs. resistant patient population.</span>
+                                                    </li>                
+                                                </ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+                                            	<div data-value="1" data-question="concerns" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="2" data-question="concerns" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="3" data-question="concerns" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="4" data-question="concerns" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="5" data-question="concerns" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+												<h2 class="bold">Perceived concerns</h2>
+												<ul class="bold">
+                                                	<li><span>Niraparib: High incidence of Gr3/4 hematologic toxicity, high incidence of TEAEs leading to dose reductions and discontinuation.</span></li>
+													<li><span>Rucaparib: Non-robust DOR and PFS data, liver toxicity rate, dose reductions caused by TEAEs</span></li>
+													<li><span>LYNPARZA: 4th line indication and delay in 2Lm.  Capsule pill burden.  </span>
+                                                    </li>                
+                                                </ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+                                            	<div data-value="1" data-question="takeaways" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="2" data-question="takeaways" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="3" data-question="takeaways" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="4" data-question="takeaways" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+                                            	<div data-value="5" data-question="takeaways" class="radio-inner">
+                                                	<div class="inner-circle"></div>
+                                                </div>
+                                            </td>
+											<td>
+												<h2 class="bold">Key take-aways in favor of approval</h2>
+												<ul class="bold">
+                                                	<li><span>Niraparib: Additional option for patients.</span></li>
+													<li><span>Rucaparib: Additional option for patients.</span></li>
+													<li><span>LYNPARZA: Efficacy.  Safety.  Dosing/formulation (current dosing).  First to market.</span>
+                                                    </li>                
+                                                </ul>
+											</td>
+										</tr>
+										
+									</table>
+                                    <!--hidden form fields-->
+                                    <input type="hidden" name="userID" value="" />
+                                    <input type="hidden" name="eventID" value="" />
+                                    <input type="hidden" name="room" value="" />
+                                    <input type="hidden" name="team" value="" />
+                                    <!--hidden radio inputs-->
+                                    <input type="hidden" name="product_uniqueness" value=""/>
+                                    <input type="hidden" name="benefit" value=""/>
+                                    <input type="hidden" name="concerns" value=""/>
+                                    <input type="hidden" name="takeaways" value=""/>
+                                </form>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--Screen 3-->
+                <section id="screen-3">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message">
+                                    <h1 class="bold">THANK YOU</h1>
+                                    <h2>FOR YOUR SUBMISSION</h2>
+                                </div>
+                                <div class="button prev delay"><span>RETURN TO MAIN MENU</span></div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+
+                <!--Screen 4-->
+                <section id="screen-4">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--<div class="message">
+                                    <p><em class="bold">Attention – This resource is only available when you’re online</em></p>
+                                    
+                                </div>-->
+                                <div class="lynparza-alert"><span>OK</span></div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+                
+            </div>
+        </section>
+        
+    </body>
+    
+</html>

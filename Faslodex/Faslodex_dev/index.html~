@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content = "initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <link href="bootstrap.css" rel="stylesheet">
+        <script src="jquery.js"></script>
+        <script src="jquery-mobile.js"></script>
+		<script src="wwid.js"></script>
+        <script src="main.js"></script>
+        
+    </head>
+    
+    <body ontouchstart="">
+    
+        <div id="returnBtn"></div>
+        
+        <section id="app">
+            <div id="app-body">
+            
+                <!--Screen 1-->
+                <section id="screen-1">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-6">
+                            
+                                 <div class="faslodex-select" id="room-name">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <div class="inner-circle">
+                                                 <span>1</span>
+                                             </div> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Room Name</h1>
+                                     
+                                 </div>
+                                 <div data-select="room-name" class="bold faslodex-select-options">
+                                         <div class="option initial">Touch to Select Room Name</div>
+                                         <div class="option">Palm Event Center AB</div>
+                                         <div class="option">Palm Event Center CD</div>
+                                         <div class="option">Palm Event Center IJ</div>
+                                         <div class="option">Palm Event Center KL</div>
+                                         
+                                 </div>
+                                 
+                                 <div class="faslodex-select" id="station">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <div class="inner-circle">
+                                                 <span>2</span>
+                                             </div> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Station/Scenario #</h1>
+                                     
+                                 </div>
+                                 <div data-select="station" class="bold faslodex-select-options">
+                                         <div class="option initial">Touch to Select Station/Scenario #</div>
+									     <div class="option"><span class="bold">1:</span> High AI user (AI, Combo Trialist)</div>
+									     <div class="option"><span class="bold">2:</span> Skeptic (FASLODEX Combination)</div>
+									     <div class="option"><span class="bold">3:</span> High AI user (AI, Combo Trialist)</div>
+									     <div class="option"><span class="bold">5:</span> Skeptic (FASLODEX Combination)</div>
+									     <div class="option"><span class="bold">6:</span> High AI user (AI, Combo Trialist)</div>
+									     <div class="option"><span class="bold">7:</span> Skeptic (FASLODEX Combination)</div>
+                                         
+                                 </div>
+                                  
+                                 <div class="faslodex-select json-heading" id="pss">
+                                 
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <div class="inner-circle">
+                                                 <span>3</span>
+                                             </div> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select PSS</h1>
+                                     
+                                 </div>
+                                 
+                                 <div data-select="pss" class="bold faslodex-select-options json-select">
+                                     <div class="option initial selected no-remove">Touch to Select PSS</div>    
+                                 </div>
+                                 
+                                 <div class="faslodex-select json-heading" id="customer">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <div class="inner-circle">
+                                                 <span>4</span>
+                                             </div> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Customer</h1>
+                                     
+                                 </div>
+                                 
+                                 <div data-select="customer" class="bold faslodex-select-options json-select">
+                                         <div class="option initial selected no-remove">Touch to Select Customer</div>      
+                                         <div class="option none no-remove" data-userid="0">None Assigned</div> 
+                                 </div>
+                                 
+                                 <div class="faslodex-select json-heading" id="observer">
+                                     
+                                     <div class="instruction-num">
+                                         <div class="outer-circle">
+                                             <div class="inner-circle">
+                                                 <span>5</span>
+                                             </div> 
+                                         </div>
+                                     </div>
+                                     
+                                     <h1>Touch to Select Observer</h1>
+                                 </div>
+                                 
+                                 <div data-select="observer" class="bold faslodex-select-options json-select">
+                                         <div class="option initial selected no-remove">Touch to Select Observer</div>
+                                         <div class="option none no-remove" data-userid="0">None Assigned</div>
+                                 </div>
+                                 
+                            </div>
+                            <div class="col-md-6 last">
+                                <h1 class="bold">OVERVIEW:</h1>
+                                
+                                <p><span class="bold">To start: </span>Assign participants a role (PSS, Customer, Observer). The PSS role must be assigned to continue, Customer and Observer role may be "None Assigned".</p>
+                                <p><span class="bold">5 minutes: </span>PSS and Customer sales interaction</p>
+                                <p><span class="bold">1 minute: </span>Observer provides feedback</p>
+                                <p><span class="bold">2 minutes: </span>Facilitator scores interaction for each role, and provides feedback</p>
+                                <p class="orange notice-text bold"><span class="inner-circle"></span>Indicates Step Complete</p>
+                                <div class="button next one delay"><span>BEGIN</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--Screen 2-->
+                <section id="screen-2">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div id="purple-skew">
+                                    <div><span class="bold">STATION 4:</span> MONOTHERAPY CALL: BONE-ONLY NON-VISCERAL PATIENT</div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <form id="faslodex-form" method="post" action="#">
+                                    <div class="col-md-6">
+                                        <div id="orange-section">
+                                            <div class="role-section">
+                                                <div class="role-title bold">PSS ROLE</div>
+                                                <div class="name-section bold">John Doe</div>
+                                            </div>
+                                            <div class="rating-section orange">
+                                                <div class="rating-header">
+                                                    <div class="rating-numbers bold">
+                                                         <span>1</span>
+                                                         <span>2</span>
+                                                         <span>3</span>
+                                                         <span>4</span>
+                                                         <span>5</span>
+                                                    </div>
+                                                    <div class="rating-header-text bold">
+                                                        <p>CRITERIA: COMBINATION</p>
+                                                        <p>THERAPY / HIGH AI USER</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row first">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="orange-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="orange-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="orange-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="orange-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="orange-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text first">
+                                                        <p>Used the AZ Selling Framework throughout the call</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row second">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="orange-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="orange-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="orange-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="orange-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="orange-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text second">
+                                                        <p>Created positive tension between the customer and the current approach/problem</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row third">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="orange-3">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="orange-3">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="orange-3">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="orange-3">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="orange-3">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text third">
+                                                        <p>Positioned the brand as a personalized solution and created value by linking AZAP-approved messages to the unment need</p>
+                                                        <ul>
+                                                            <li>Focused on launch combination indication with Paloma 3 clinical data and practice-aligned patient profiles</li>
+                                                            <li>Reinforced monotherapy use for non-combination patients (after anti-estrogen)</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                                <div class="radio-row last">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="orange-4">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="orange-4">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="orange-4">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="orange-4">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="orange-4">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text last">
+                                                        <p>Gained a specific agreement for action that was aligned with the sales discussion and the customer's unmet need</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bold textbox orange">
+                                                <p class="notes">NOTES: (Optional)</p>
+                                                <textarea placeholder="Touch to Activate Keyboard">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div class="button prev delay"><span>RETURN TO MAIN MENU</span></div>
+                                        
+                                    </div>
+                                    <div class="attention-msg"><span class="exclamation">!</span>Attention: You must rate all active criteria to Submit</div>
+                                    <div class="col-md-6">
+                                        <div id="maroon-section">
+                                            <div id="maroon-overlay"></div>
+                                            <div class="role-section">
+                                                <div class="role-title bold">CUSTOMER ROLE</div>
+                                                <div class="name-section bold">Jane Doe</div>
+                                            </div>
+                                            <div class="rating-section maroon">
+                                                <div class="rating-header">
+                                                    <div class="rating-numbers bold">
+                                                         <span>1</span>
+                                                         <span>2</span>
+                                                         <span>3</span>
+                                                         <span>4</span>
+                                                         <span>5</span>
+                                                    </div>
+                                                    <div class="rating-header-text bold">
+                                                        <p>CRITERIA: COMBINATION</p>
+                                                        <p>THERAPY / HIGH AI USER</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row first">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="maroon-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="maroon-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="maroon-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="maroon-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="maroon-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text ">
+                                                        <p>Conveyed that he/she was motivated by the experience, dependability, and tolerability of AIs</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row last">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="maroon-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="maroon-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="maroon-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="maroon-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="maroon-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text last">
+                                                        <p>Indicated that he/she was looking for OS benefit and questioned OS benefit shown with palbociclib</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bold textbox maroon">
+                                                <p class="notes">NOTES: (Optional)</p>
+                                                <textarea placeholder="Touch to Activate Keyboard">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <div id="purple-section">
+                                            <div id="purple-overlay"></div>
+                                            <div class="role-section">
+                                                <div class="role-title bold">OBSERVER ROLE</div>
+                                                <div class="name-section bold">Joe Smith</div>
+                                            </div>
+                                            <div class="rating-section purple">
+                                                <div class="rating-header">
+                                                    <div class="rating-numbers bold">
+                                                         <span>1</span>
+                                                         <span>2</span>
+                                                         <span>3</span>
+                                                         <span>4</span>
+                                                         <span>5</span>
+                                                    </div>
+                                                    <div class="rating-header-text bold">
+                                                        <p>CRITERIA</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row first">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="purple-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="purple-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="purple-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="purple-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="purple-1">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text first">
+                                                        <p>Demonstrated understanding of scenario as a whole</p>
+                                                    </div>
+                                                </div>
+                                                <div class="radio-row last">
+                                                    <div class="radio-section">
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="1" data-question="purple-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="2" data-question="purple-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="3" data-question="purple-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="4" data-question="purple-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="radio-elem">
+                                                            <div class="radio-inner" data-value="5" data-question="purple-2">
+                                                                <div class="inner-circle"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="rating-text last">
+                                                        <p>Identified at least one strength and one area for improvement</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="textbox purple bold">
+												<p class="notes">NOTES: (Optional)</p>
+                                                <textarea placeholder="Touch to Activate Keyboard">
+                                                </textarea>
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="button input next delay two" value="SUBMIT" />
+                                    </div>
+                                    <!--hidden form fields-->
+                                    <input type="hidden" name="userID" value="" />
+                                    <input type="hidden" name="eventID" value="" />
+                                    <input type="hidden" name="room" value="" />
+                                    <input type="hidden" name="station" value="" />
+                                    <input type="hidden" name="pss" value="" />
+                                    <input type="hidden" name="customer" value="0" />
+                                    <input type="hidden" name="observer" value="0" />
+                                    <!--hidden radio inputs-->
+                                    <input type="hidden" name="orange-1" value=""/>
+                                    <input type="hidden" name="orange-2" value=""/>
+                                    <input type="hidden" name="orange-3" value=""/>
+                                    <input type="hidden" name="orange-4" value=""/>
+                                    <input type="hidden" name="orange-notes" value=""/>
+                                    <input type="hidden" name="maroon-1" value="0"/>
+                                    <input type="hidden" name="maroon-2" value="0"/>
+                                    <input type="hidden" name="maroon-notes" value=""/>
+                                    <input type="hidden" name="purple-1" value="0"/>
+                                    <input type="hidden" name="purple-2" value="0"/>
+                                    <input type="hidden" name="purple-notes" value=""/>
+                                </form>  
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!--Screen 3-->
+                <section id="screen-3">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="message">
+                                    <h1><em class="bold">THANK YOU</em></h1>
+                                    <h2><em>FOR YOUR SUBMISSION</em></h2>
+                                </div>
+                                <div class="button prev delay"><span>RETURN TO MAIN MENU</span></div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+
+                <!--Screen 4-->
+                <section id="screen-4">
+                    <div class="section-inner container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!--<div class="message">
+                                    <p><em class="bold">Attention – This resource is only available when you’re online</em></p>
+                                    
+                                </div>-->
+                                <div class="faslodex-alert"><span>OK</span></div>
+                            </div>
+                        </div>
+                    </div>    
+                </section>
+                
+            </div>
+        </section>
+        
+    </body>
+    
+</html>
